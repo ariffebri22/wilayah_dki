@@ -1,0 +1,18 @@
+services:
+    backend:
+        build: ./wilayah_dki_be
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./wilayah_dki_be:/app
+            - /app/node_modules
+        restart: unless-stopped
+
+    frontend:
+        build: ./wilayah_dki_fe
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./wilayah_dki_fe:/app
+            - /app/node_modules
+        restart: unless-stopped
