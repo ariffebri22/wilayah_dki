@@ -26,30 +26,33 @@ Aplikasi pencarian wilayah dengan autocomplete untuk menemukan kecamatan di DKI 
     cd wilayah_dki
     ```
 2. Setup environment:
-
-# Backend
-
+- Backend
+```
 cd wilayah_dki_be && npm install
 cp .env.example .env
+```
 
-# Frontend
-
+- Frontend
+```
 cd ../wilayah_dki-fe && npm install
 cp .env.example .env
+```
 
 3. Jalankan
-   docker-compose up --build
+```
+docker-compose up --build
+```
 
 ## Env
-
-# Backend
-
+- Backend
+```
 DB_HOST=153.92.15.57
 DB_USER=u241792908_wilayah_dki
 DB_PASSWORD=WilayahDKI123
 DB_NAME=u241792908_wilayah_dki
 DB_PORT=3306
-
-# Frontend
-
+```
+- Frontend
+```
 VITE_API_URL=http://localhost:8000
+```
